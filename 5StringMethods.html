@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="makeUpperCase()">Make Text UpperCase</button>
+    <p id="normalText"></p>
+</body>
+
+<script>
+    //************* string method ********
+
+    var sagar = " I becoming a MERN stack developer MERN   ";
+    var NextTarget = "I becoming python ml developer"
+
+    // console.log(sagar.length)
+    // console.log(sagar.indexOf("MERN")) // search the word in the string gives position number of that note:- define only first word
+    // console.log("lastIndexOf", sagar.lastIndexOf("MERN")) // its searches in the last 
+    // console.log("slice", sagar.slice(3, 8))
+    // console.log("replace", sagar.replace("MERN stack", "python"))
+
+
+    // // console.log("charAt", sagar.charAt(1    ))
+
+    // console.log("concat", sagar.concat(" ", NextTarget))
+
+    // console.log("sagar", sagar.substring(2, 10))
+
+
+
+    let normalText = document.getElementById("normalText");
+
+    normalText.innerHTML = sagar;
+
+    function makeUpperCase() {
+
+        let currentText = normalText.innerHTML;
+
+        if (currentText === currentText.toUpperCase()) {
+            normalText.innerHTML = currentText.toLowerCase();
+        }
+        else {
+            normalText.innerHTML = currentText.toUpperCase();
+        }
+    }
+
+
+
+
+    let isWellString = "I am a sagar \ud932" // \ud932698
+
+
+    console.log("isWellString", isWellString.isWellFormed())
+
+    console.log("isWellString", isWellString.toWellFormed())
+
+
+    let removeSpace = sagar.trim()
+
+    console.log("trim", sagar.length, removeSpace.length)
+
+
+    // length  done  // define the word count
+    // replace() done  // its replace item of the string note:- its only work for first chrecter
+    // charAt()  done // its gives the cheractor threw the index number in the string
+    // charCodeAt() done // its gives the unicode on the character in trhe string they only  define to o to 65535
+    // codePointAt() // they define full unicode
+    // concat()  // its join strings
+    // at() //  its define the gives charcter of by the index its comes in es 2022
+    // [] // its also gives the character threw the index number
+    // slice() done // its give slice of string threw start end index number
+    // substring() //  its same as slice but here index number start with 1
+    // substr()  // this is removed in the modern java script
+    // toUpperCase() // this make the string to capital letter
+    // toLowerCase() // this making string lower case
+    // isWellFormed() // its gives bulleon check string has unicode or not
+    // toWellFormed() // its give unicode with the string
+    // trim()  // its remove the extra space of the string we say that white space
+    // trimStart()  // its remove the extra space of the starting of the string we say that white space es 19
+    // trimEnd() // its remove the extra space of the end of the string we say that white space  es 19
+    // padStart() // its for adding the string in the string of the starting first parameter is use of many how much charter i want give the and it change number to string
+    // padEnd() // its for adding the string in the string of the ending first parameter is use of many how much charter i want give the and it change number to string
+    // repeat() // repeat makes the multicopy of string
+    // replaceAll() // want i want to replace somthing to the string
+    // split() // split make the array of string
+
+
+</script>
+
+</html>
